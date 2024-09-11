@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#special">Specials</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#outlets">Outlets</a></li>
+            <li><a href="#discount">Discounts</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage Section with Video -->
+    <header id="home">
+        <video autoplay muted loop id="bg-video">
+            <source src="[8K HDR] Food and Cooking in Hardcore Quality -- Dolby Vision 60FPS - Over 1000 nits Brightness (2160p60 HDR).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+            <h1>Delicious Food Delivered to You</h1>
+            <a href="#special" class="btn">Order Now</a>
+        </div>
+    </header>
+</body>
+</html>
+</body>
+</html>
+
+
+
+<!-- Special Food Section -->
+<section id="special">
+    <h2>Top-Rated Dishes</h2>
+    <div class="food-container">
+        <div class="food-item">
+            <img src="chicken-biryani.jpg" alt="Dish 1">
+            <h3>Chicken Briyani</h3>
+            <p>4.8/5★(5.1k)</p>
+            <p>₹350</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food-item">
+            <img src="fish.jpg" alt="Dish 2">
+            <h3>Fish  </h3>
+            <p>4.6/5★(3.9k)</p>
+            <p>₹320</p>
+            <button>Buy Now</button>
+        </div>
+    <div class="food-item">
+        <img src="katlambe-chole.jpg" alt="Dish 3">
+        <h3>Puri Chole </h3>
+        <p>4.9/5★(3.4k)</p>
+        <p>₹270</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="food-item">
+        <img src="dosa.jpg" alt="Dish 4">
+        <h3>Masala Dosa</h3>
+        <p>4.85★(2.4k)</p>
+        <p>₹190</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="food-item">
+        <img src="stake.jpg" alt="Dish 5">
+        <h3> Stake </h3>
+        <p>4.9/5★(3.9k)</p>
+        <p>₹590</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="food-item">
+        <img src="shish-kabobs.jpg" alt="Dish 6">
+        <h3>Kabab </h3>
+        <p>4.7/5★(4.4k)</p>
+        <p>₹620</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="food-item">
+        <img src="russian-salad.jpg" alt="Dish 7">
+        <h3>Russian Salad </h3>
+        <p>4.9/5★(3.2k)</p>
+        <p>₹300</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="food-item">
+        <img src="Caesar-Salad_7.jpg" alt="Dish 8">
+        <h3>Caesar Salad </h3>
+        <p>4.8/5★(2.4k)</p>
+        <p>₹320</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="food-item">
+        <img src="chickenchillie.jpg" alt="Dish 9">
+        <h3>Caesar Salad </h3>
+        <p>4.7/5★(3.4k)</p>
+        <p>₹280</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="food-item">
+        <img src="butterchicken.jpg" alt="Dish 10">
+        <h3>Butter Chicken </h3>
+        <p>4.8/5★(2.4k)</p>
+        <p>₹550</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="food-item">
+        <img src="mac n cheese (macroni).jpg" alt="Dish 11">
+        <h3>Mac n cheese</h3>
+        <p>4.8/5★(2.4k)</p>
+        <p>₹290</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="food-item">
+        <img src="mutton stew.jpg" alt="Dish 8">
+        <h3>Mutton stew </h3>
+        <p>4.8/5★(2.4k)</p>
+        <p>₹750</p>
+        <button>Buy Now</button>
+    </div>
+
+</section>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .header {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header.dark-mode {
+            background-color: #333;
+            color: #e0e0e0;
+        }
+
+        .menu-bar a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .menu-bar a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-image: url('https://example.com/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .btn {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff9933;
+            transform: scale(1.05);
+        }
+
+        /* Sections */
+        .about-section, .food-section, .outlet-section, .contact-section, .cart-section, .review-section, .discount-section {
+            padding: 80px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about-section.dark-mode, .food-section.dark-mode, .outlet-section.dark-mode, .contact-section.dark-mode, .cart-section.dark-mode, .review-section.dark-mode, .discount-section.dark-mode {
+            background-color: #1c1c1c;
+            color: #e0e0e0;
+        }
+
+        .about-section h3, .food-section h3, .outlet-section h3, .contact-section h3, .review-section h3, .discount-section h3 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .food-items, .outlet-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .food-card {
+            display: inline-block;
+            width: 300px;
+            margin: 15px;
+            text-align: center;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .food-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .food-card h4 {
+            margin: 15px 0 10px;
+        }
+
+        .food-card button {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .food-card button:hover {
+            background-color: #ff9933;
+            transform: scale(1.05);
+        }
+
+        .outlet-list li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Review Section */
+        .review-section {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-section .review {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .review h4 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .review p {
+            margin: 5px 0;
+        }
+
+        /* Discount Section */
+        .discount-section {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .discount-section input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            width: calc(100% - 120px);
+            margin-right: 10px;
+        }
+
+        .discount-section button {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .discount-section button:hover {
+            background-color: #ff9933;
+            transform: scale(1.05);
+        }
+
+        /* Cart Section */
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart-item.dark-mode {
+            background-color: #444;
+        }
+
+        .checkout-button {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 15px 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .checkout-button:hover {
+            background-color: #ff9933;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            position: relative;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Dark Mode Toggle */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .dark-mode-toggle.dark-mode {
+            background: #333;
+            color: #e0e0e0;
+        }
+
+        /* Checkout and Payment Modals */
+        .checkout-modal, .payment-modal, .loading-modal, .success-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .checkout-modal h2, .payment-modal h2, .loading-modal h2, .success-modal h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .checkout-form input, .payment-form input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        .payment-form input[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+        .payment-form input::-webkit-inner-spin-button, .payment-form input::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .checkout-form button, .payment-form button {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 15px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .checkout-form button:hover, .payment-form button:hover {
+            background-color: #ff9933;
+            transform: scale(1.05);
+        }
+
+        .loading-modal .modal-content, .success-modal .modal-content {
+            text-align: center;
+        }
+
+        .loading-modal img, .success-modal img {
+            width: 80px;
+        }
+
+        .loading-modal h2, .success-modal h2 {
+            font-size: 24px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+
+
+
+    
+
+    <!-- Food Section -->
+    <section class="food-section" id="menu">
+        <h3>Our Menu</h3>
+        <div class="food-items">
+            <!-- Menu Items -->
+            <div class="food-card">
+                <img src="Momo_nepal.jpg" alt="Chicken Biryani">
+                <h4>Afghani Momos</h4>
+                <p> spiced chicken with sauces and herbs.</p>
+                <button onclick="addToCart('Afghani Momos', 400)">Add to Cart</button>
+            </div>
+            <div class="food-card">
+                <img src="sev-puri-or-golgappa-chaat.jpg" alt="Pani Puri Chaat">
+                <h4>Pani Puri Chaat</h4>
+                <p>Crispy puris filled with spicy water, potatoes, and chickpeas.</p>
+                <button onclick="addToCart('Pani Puri Chaat', 150)">Add to Cart</button>
+            </div>
+            <div class="food-card">
+                <img src="traditional-indian-naan-flatbread.jpg" alt="Garlic Naan">
+                <h4>Garlic Naan</h4>
+                <p>Soft and fluffy naan bread topped with garlic and herbs.</p>
+                <button onclick="addToCart('Garlic Naan', 99)">Add to Cart</button>
+            </div>
+            <div class="food-card">
+                <img src="rasgulla-or-rasgulle-indian-sweet-indian-dessert.jpg" alt="Rasgulla">
+                <h4>Rasgulla</h4>
+                <p>Sweet and spongy cheese balls soaked in a light sugar syrup.</p>
+                <button onclick="addToCart('Rasgulla', 5.99)">Add to Cart</button>
+            </div>
+            <div class="food-card">
+                <img src="wp9199690.jpg" alt="Chole Bhature">
+                <h4>Chole Bhature</h4>
+                <p>Spicy chickpea curry served with deep-fried bread.</p>
+                <button onclick="addToCart('Chole Bhature', 180)">Add to Cart</button>
+            </div>
+            <!-- Add More Menu Items Here -->
+            <!-- Example Additional Items -->
+            <div class="food-card">
+                <img src="sweet.jpg" alt="Masala Dosa">
+                <h4>Pastry </h4>
+                <p>Sweet pastry mix with choco.</p>
+                <button onclick="addToCart('Masala Dosa', 239)">Add to Cart</button>
+            </div>
+            <div class="food-card">
+                <img src="palak-paneer-and-tandoori-roti.jpg" alt="Palak Paneer">
+                <h4>Palak Paneer-tandoori-roti</h4>
+                <p>Paneer cubes cooked in a rich spinach gravy.</p>
+                <button onclick="addToCart('Palak Paneer', 199)">Add to Cart</button>
+            </div>
+            <div class="food-card">
+                <img src="homemade-chicken-tikka-masala.jpg"alt="Chicken Tikken Masala">
+                <h4>Chicken Tikken Masala</h4>
+                <p> spiced crispy chicken with sauces </p>
+                <button onclick="addToCart('Chicke Tikka Masala', 550)">Add to Cart</button>
+            </div>
+            <div class="food-card">
+                <img src="japanese-restaurant-sushi-dish.jpg" alt="Sushi">
+                <h4>Sushi</h4>
+                <p>Consisting of cooked rice flavoured with vinegar and a variety of vegetable.</p>
+                <button onclick="addToCart('Sushi', 800)">Add to Cart</button>
+            </div>
+            <div class="food-card">
+                <img src="pad-thai.jpg" alt="Pad Thai">
+                <h4>Pad Thai</h4>
+                <p> typically made with rice noodles, shrimp, peanuts, scrambled egg and bean sprouts. .</p>
+                <button onclick="addToCart('Pad Thai', 950)">Add to Cart</button>
+            </div>
+            <div class="food-card">
+                <img src="pizza-margharita.jpg" alt="Pizza Margharita">
+                <h4>Pizza Margharita</h4>
+                <p> garnished with hand-crushed peeled tomatoes, mozzarella</p>
+                <button onclick="addToCart('Pizza Margharita', 350)">Add to Cart</button>
+            </div>
+            <div class="food-card">
+                <img src="food-beeftacos.jpg" alt="Pizza Margharita">
+                <h4>Tacos</h4>
+                <p> wheat-based tortilla topped with a filling.</p>
+                <button onclick="addToCart('Tacos', 650)">Add to Cart</button>
+            </div>
+            
+        </div>
+    </section>
+
+    
+
+
+    
+    <!-- Cart Section -->
+    <section class="cart-section" id="cart">
+        <h3>Your Cart</h3>
+        <div class="cart-items"></div>
+        <div class="cart-total">Total: 0.00</div>
+        <button class="checkout-button" onclick="openCheckout()">Checkout</button>
+    </section>
+
+    
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeCheckout()">&times;</span>
+            <h2>Checkout</h2>
+            <form id="checkout-form" class="checkout-form" onsubmit="return openPaymentPage()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <button type="submit" class="checkout-button">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="payment-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closePaymentPage()">&times;</span>
+            <h2>Payment</h2>
+            <form id="payment-form" class="payment-form" onsubmit="processPayment(event)">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" required>
+                <label for="cvv">CVV:</label>
+                <input type="number" id="cvv" name="cvv" required>
+                <button type="submit">Pay Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Loading Modal -->
+    <div class="loading-modal">
+        <div class="modal-content">
+            <img src="loading.gif" alt="Loading">
+            <h2>Processing Payment...</h2>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="success-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeSuccess()">&times;</span>
+            <h2>Payment Successful</h2>
+            <p>Your order has been placed successfully!</p>
+            <p>Thank you for your purchase. We will deliver your food shortly.</p>
+            <button onclick="closeSuccess()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Toggle Dark Mode
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('.header').classList.toggle('dark-mode');
+            document.querySelectorAll('.food-card').forEach(card => card.classList.toggle('dark-mode'));
+            document.querySelectorAll('.cart-item').forEach(item => item.classList.toggle('dark-mode'));
+            document.querySelectorAll('.checkout-modal, .payment-modal, .loading-modal, .success-modal').forEach(modal => modal.classList.toggle('dark-mode'));
+            document.querySelectorAll('.review-section').forEach(section => section.classList.toggle('dark-mode'));
+            document.querySelectorAll('.discount-section').forEach(section => section.classList.toggle('dark-mode'));
+        }
+
+        // Add to Cart
+        function addToCart(item, price) {
+            const cartItems = document.querySelector('.cart-items');
+            const cartTotal = document.querySelector('.cart-total');
+            let itemTotal = parseFloat(cartTotal.textContent.replace('Total: ₹', '')) || 0;
+
+            const cartItem = document.createElement('div');
+            cartItem.classList.add('cart-item');
+            cartItem.innerHTML = `${item} - ₹${price.toFixed(2)}`;
+            cartItems.appendChild(cartItem);
+
+            itemTotal += price;
+            cartTotal.textContent = `Total: ₹${itemTotal.toFixed(2)}`;
+        }
+
+        // Open Checkout Modal
+        function openCheckout() {
+            document.querySelector('.checkout-modal').style.display = 'flex';
+        }
+
+        // Close Checkout Modal
+        function closeCheckout() {
+            document.querySelector('.checkout-modal').style.display = 'none';
+        }
+
+        // Open Payment Modal
+        function openPaymentPage() {
+            document.querySelector('.checkout-modal').style.display = 'none';
+            document.querySelector('.payment-modal').style.display = 'flex';
+            return false; // Prevent form from submitting
+        }
+
+        // Close Payment Modal
+        function closePaymentPage() {
+            document.querySelector('.payment-modal').style.display = 'none';
+        }
+
+        // Process Payment
+        function processPayment(event) {
+            event.preventDefault();
+            document.querySelector('.payment-modal').style.display = 'none';
+            document.querySelector('.loading-modal').style.display = 'flex';
+
+            setTimeout(() => {
+                document.querySelector('.loading-modal').style.display = 'none';
+                document.querySelector('.success-modal').style.display = 'flex';
+            }, 3000); // Simulate a 3-second payment processing time
+        }
+
+        // Close Success Modal
+        function closeSuccess() {
+            document.querySelector('.success-modal').style.display = 'none';
+        }
+
+        // Apply Coupon Code
+        function applyCoupon() {
+            const couponCode = document.getElementById('coupon-code').value;
+            const discountMessage = document.getElementById('discount-message');
+
+            if (couponCode === 'WELCOME10') {
+                discountMessage.textContent = 'Coupon applied! You get 10% off your order.';
+            } else {
+                discountMessage.textContent = 'Invalid coupon code.';
+            }
+        }
+        // Show Bill Modal
+        function showBill() {
+            document.querySelector('.success-modal').style.display = 'none';
+            document.querySelector('.bill-modal').style.display = 'flex';
+        }
+
+        // Close Bill Modal
+        function closeBill() {
+            document.querySelector('.bill-modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+ 
+</script>
+</body>
+</html>
+
+    
+
+  
+
+    <!-- Review Section -->
+    <section class="review-section" id="reviews">
+        <h3>Customer Reviews</h3>
+        <div class="review">
+            <h4>Ayush</h4>
+            <p>"The food is absolutely delicious and the delivery is always prompt!"</p>
+        </div>
+        <div class="review">
+            <h4>Aniket Sharma </h4>
+            <p>"A wonderful dining experience from the comfort of my home. Highly recommend!"</p>
+        </div>
+        <div class="review">
+            <h4>Ananya Sharma </h4>
+            <p>"Quite nice"</p>
+        </div>
+        <div class="review">
+            <h4>Aradhya Aggarwal </h4>
+            <p>"Amazing quality"</p>
+        </div>
+        <!-- Add More Reviews Here -->
+    </section>
+
+
+
+
+    
+
+
+    <!-- Discount Section -->
+    <section class="discount-section" id="discount">
+        <h3>Special Discounts</h3>
+        <p>Enjoy 10% off on your first order with the coupon code <strong>WELCOME10</strong></p>
+        <input type="text" id="coupon-code" placeholder="Enter coupon code">
+        <button onclick="applyCoupon()">Apply Coupon</button>
+        <div id="discount-message"></div>
+    </section>
+
+ <!-- Outlets Section -->
+ <section class="outlet-section" id="outlets">
+    <h3>Our Outlets</h3>
+    <ul class="outlet-list">
+        <li>Neon city, Chennai</li>
+        <li>Gift city, Hyderabad</li>
+        <li>Downtown, Pathankot</li>
+        <li>Dontown Riverside, Ludhiana</li>
+    </ul>
+</section>
+   
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h3>About Us</h3>
+        <p>We are dedicated to bringing you the finest Indian dishes with fast, reliable delivery.</p>
+        <p>Our chefs use only the freshest ingredients to create authentic and mouthwatering dishes.</p>
+    </section>
+
+
+    
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Food Delivery Service</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+
+
+
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="contact-container">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you! Reach out with any inquiries or feedback.</p>
+    
+                <div class="contact-content">
+                    <!-- Contact Form -->
+                    <div class="form-section">
+                        <form action="#">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+    
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+    
+                    <!-- Contact Information -->
+                    <div class="info-section">
+                        <h3>Contact Information</h3>
+                        <p><strong>Phone:</strong>+91 7876677048</p>
+                        <p><strong>Email:</strong> Ezyaroha@gmail.com</p>
+                        <p><strong>Address:</strong>Chandigarh,India</p>
+                        
+                        <!-- Social Media Links -->
+                        <div class="social-links">
+                            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                            <a href="#"><img src="x.png"        alt="X"></a>
+                            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Location Map -->
+                <div class="map-section">
+                    <h3>Our Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.200389782015!2d144.95373581576745!3d-37.81720977975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f23f77b5%3A0xf57771fcbf5e44b7!2sMelbourne%2C%20Australia!5e0!3m2!1sen!2s!4v1616040128127!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    
+    </body>
+    </html>
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Premium Food Delivery. All rights reserved.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
